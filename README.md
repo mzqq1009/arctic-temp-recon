@@ -29,7 +29,16 @@ a.The downloaded NP observations were calculated as daily averages, the 1979 to 
 b.Processing of NP observations into csv format
 code: NP data.rar/NP_new.py
 
+######################
+#model building part
+######################
+1.Download ERA5 and ERA-Interim reanalysis data for the Northern Hemisphere, with a spatial resolution of 1° and a temporal resolution of hourly. 
+code: t_data.rar/download_era5_hourly_ta.py  and t_data.rar/download_ERAI-ta.py
 
+2.The above hourly temperature data were converted to daily data using CDO (code:t_data.rar/hourly2daily.csh), after which they were placed on an equal area grid (code: t_data.rar/era_daily2ease.py) and normalised using ERA5 multi-year means and standard deviations (cdo ymonstd/ cdo ymonmean).
+
+3.The deep learning model reference (Kadow et al., 2020), which was modified in this study, includes changing the input size of the neural network, changing the loss function, post-processing the output using Python, etc.
+code： AI-north.rar
 
 
 
