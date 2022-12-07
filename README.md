@@ -22,3 +22,24 @@ code：python-data preparation part.rar/qc_buoydata.py
 
 2.GHCN-d
 a.Download the original .dly data from the GHCN website, convert the data into a csv file, extract the temperature data and remove the missing values, and save the data separately by year.  code: GHCN.rar/GHCN_time.py
+
+3.NP data
+a.The downloaded NP observations were calculated as daily averages, the 1979 to 1991 portion of which was extracted, followed by rounding off the outliers from the NP data.  code: NP data.rar/NP.py
+
+b.Processing of NP observations into csv format
+code: NP data.rar/NP_new.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
