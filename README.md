@@ -40,9 +40,13 @@ code: t_data.rar/download_era5_hourly_ta.py  and t_data.rar/download_ERAI-ta.py
 3.The deep learning model reference (Kadow et al., 2020), which was modified in this study, includes changing the input size of the neural network, changing the loss function, post-processing the output using Python, etc.
 code： AI-north.rar
 
+######################
+#result output part
+######################
+The .h5 file output from the deep learning model was converted to an equal area grid nc file using python, (code: result output part.rar/h5_to_nc.py)
 
-
-
+and the output equal area grid results were further converted to 1° latitude and longitude grid point format using Python.
+(code: result output part.rar/output_1x1.py)
 
 
 
