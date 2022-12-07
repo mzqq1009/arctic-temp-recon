@@ -19,3 +19,6 @@ code: python-data preparation part.rar/buoy_add_time.py
 
 e.Quality control and correction on buoy observations
 code：python-data preparation part.rar/qc_buoydata.py
+
+2.GHCN-d
+a.Download the original .dly data from the GHCN website, convert the data into a csv file, extract the temperature data and remove the missing values, and save the data separately by year.  code: GHCN.rar/GHCN_time.py
